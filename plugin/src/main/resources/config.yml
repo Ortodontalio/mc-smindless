@@ -1,0 +1,58 @@
+#   $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\ $$$$$$$\  $$\       $$$$$$$$\  $$$$$$\   $$$$$$\
+#  $$  __$$\ $$$\    $$$ |\_$$  _|$$$\  $$ |$$  __$$\ $$ |      $$  _____|$$  __$$\ $$  __$$\
+#  $$ /  \__|$$$$\  $$$$ |  $$ |  $$$$\ $$ |$$ |  $$ |$$ |      $$ |      $$ /  \__|$$ /  \__|
+#  \$$$$$$\  $$\$$\$$ $$ |  $$ |  $$ $$\$$ |$$ |  $$ |$$ |      $$$$$\    \$$$$$$\  \$$$$$$\
+#  \____$$\ $$ \$$$  $$ |  $$ |  $$ \$$$$ |$$ |  $$ |$$ |      $$  __|    \____$$\  \____$$\
+#  $$\   $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ |$$ |  $$ |$$ |      $$ |      $$\   $$ |$$\   $$ |
+#  \$$$$$$  |$$ | \_/ $$ |$$$$$$\ $$ | \$$ |$$$$$$$  |$$$$$$$$\ $$$$$$$$\ \$$$$$$  |\$$$$$$  |
+#  \______/ \__|     \__|\______|\__|  \__|\_______/ \________|\________| \______/  \______/
+messages:
+  no-perms: "&5&lSmindless: &cNot enough permissions to execute this command."
+  reloaded: "&5&lSmindless: &2Configuration has been reloaded successfully! Loaded &1&l%count%&2 smiles"
+  no-smiles: "&5&lSmindless: &cThere are no smiles. Use &f&l/smi r &cto reload configuration"
+  smiles-list: "&5&lSmindless: &f&lAvailable smiles &4&l(Click to copy to clipboard)&f&l: \n&r"
+  premium-list: "&5&lSmindless: &6&lPremium smiles: \n&r"
+  smiles-player-list: "&5&lSmindless: &f&lAvailable smiles for player &l%user%&r&2 &4&l(Click to ban/unban smile for this player)&f&l: \n&r"
+  player-not-found: "&5&lSmindless: &cA player with such a nickname was not found!"
+  smile-not-found: "&5&lSmindless: &cA smile with such input was not found!"
+  user-banned: "&5&lSmindless: &2Smile &r%smile%&2 has been banned for &l%user%&r&2 successfully"
+  user-unbanned: "&5&lSmindless: &2Smile &r%smile%&2 has been unbanned for &l%user%&r&2 successfully"
+  user-granted: "&5&lSmindless: &2Smile &r%smile%&2 has been granted for &l%user%&r&2 successfully"
+  user-ungranted: "&5&lSmindless: &2Smile &r%smile%&2 has been ungranted for &l%user%&r&2 successfully"
+  user-already-banned: "&5&lSmindless: &2Player &l%user%&r&2 has been already banned for &r%smile%&2 smile"
+  user-already-unbanned: "&5&lSmindless: &2Player &l%user%&r&2 has been already unbanned for &r%smile%&2 smile"
+  user-already-granted: "&5&lSmindless: &2Player &l%user%&r&2 already has a premium access for &r%smile%&2 smile"
+  user-already-ungranted: "&5&lSmindless: &2Player &l%user%&r&2 already doesn't have a premium access for &r%smile%&2 smile"
+  ban-failed: "&5&lSmindless: &cFailed to ban a smile &r%smile%&c for player &l%user%&r"
+  use-grant: "&5&lSmindless: &cOnly grant and ungrant command can be executed for premium smiles&r"
+  unban-failed: "&5&lSmindless: &cFailed to unban a smile &r%smile%&c for player &l%user%&r"
+  grant-failed: "&5&lSmindless: &cFailed to grant a smile &r%smile%&c for player &l%user%&r"
+  ungrant-failed: "&5&lSmindless: &cFailed to ungrant a smile &r%smile%&c for player &l%user%&r"
+  non-premium: "&5&lSmindless: &cFailed to grant a non-premium smile &r%smile%&c for player &l%user%&r"
+  non-premium-ungrant: "&5&lSmindless: &cFailed to ungrant a non-premium smile &r%smile%&c for player &l%user%&r"
+
+smiles:
+  yea: #\u9000
+    inputs: ":yea:,:right:,:100:"
+    output: "退"
+  lol: #\u9001
+    inputs: ":lol:,:bm:,:new_moon_with_face:"
+    output: "送"
+  lul: #\u9002
+    inputs: ":lul:,:ym:,:full_moon_with_face:"
+    output: "适"
+    premium: false # Optional. If true - this smile is premium.
+  heh: #\u9003
+    inputs: ":heh:,:grinning:"
+    output: "逃"
+    premium: false # It may be missed
+  great: #\u9004
+    inputs: ":wow:,:great:,:smiley:"
+    output: "逄"
+  oik: #\u9005
+    inputs: ":oik:,:sweet_smiley:"
+    output: "逅"
+    premium: true
+  hah: #\u9006
+    inputs: ":hah:,:joy:"
+    output: "逆"

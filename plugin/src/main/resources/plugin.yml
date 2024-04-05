@@ -1,0 +1,26 @@
+#   $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\ $$$$$$$\  $$\       $$$$$$$$\  $$$$$$\   $$$$$$\
+#  $$  __$$\ $$$\    $$$ |\_$$  _|$$$\  $$ |$$  __$$\ $$ |      $$  _____|$$  __$$\ $$  __$$\
+#  $$ /  \__|$$$$\  $$$$ |  $$ |  $$$$\ $$ |$$ |  $$ |$$ |      $$ |      $$ /  \__|$$ /  \__|
+#  \$$$$$$\  $$\$$\$$ $$ |  $$ |  $$ $$\$$ |$$ |  $$ |$$ |      $$$$$\    \$$$$$$\  \$$$$$$\
+#  \____$$\ $$ \$$$  $$ |  $$ |  $$ \$$$$ |$$ |  $$ |$$ |      $$  __|    \____$$\  \____$$\
+#  $$\   $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ |$$ |  $$ |$$ |      $$ |      $$\   $$ |$$\   $$ |
+#  \$$$$$$  |$$ | \_/ $$ |$$$$$$\ $$ | \$$ |$$$$$$$  |$$$$$$$$\ $$$$$$$$\ \$$$$$$  |\$$$$$$  |
+#  \______/ \__|     \__|\______|\__|  \__|\_______/ \________|\________| \______/  \______/
+name: Smindless
+version: 1.0
+main: com.ortodontalio.smindless.SmindlessPlugin
+author: Ortodontalio
+description: A small plugin that will bring the possibility of a huge number of smiles in the chat!
+commands:
+  smiles:
+    description: Command for Smindless smiles management
+    aliases: smi
+    usage: "Usage: /<command> [reload|list|ban|unban|grant|ungrant]"
+permissions:
+  smindless.*:
+    description: All Smindless permissions.
+    children:
+      smindless.command.*: true
+  smindless.command.list:
+    description: Permission for /smi l command.
+    default: true
